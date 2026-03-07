@@ -1,0 +1,4 @@
+upstream/server/polyon-chat
+upstream/server/bin/
+*.exe
+.DS_Store
