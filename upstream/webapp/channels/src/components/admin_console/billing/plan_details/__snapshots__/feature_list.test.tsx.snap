@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`components/admin_console/billing/plan_details/feature_list should match snapshot when running FREE tier 1`] = `
+<ContextProvider
+  value={
+    Object {
+      "getServerState": undefined,
+      "identityFunctionCheck": "once",
+      "stabilityCheck": "once",
+      "store": Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      },
+      "subscription": Object {
+        "addNestedSub": [Function],
+        "getListeners": [Function],
+        "handleChangeWrapper": [Function],
+        "isSubscribed": [Function],
+        "notifyNestedSubs": [Function],
+        "trySubscribe": [Function],
+        "tryUnsubscribe": [Function],
+      },
+    }
+  }
+>
+  <FeatureList
+    subscriptionPlan="cloud-starter"
+  />
+</ContextProvider>
+`;
+
+exports[`components/admin_console/billing/plan_details/feature_list should match snapshot when running paid tier and enterprise 1`] = `
+<ContextProvider
+  value={
+    Object {
+      "getServerState": undefined,
+      "identityFunctionCheck": "once",
+      "stabilityCheck": "once",
+      "store": Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      },
+      "subscription": Object {
+        "addNestedSub": [Function],
+        "getListeners": [Function],
+        "handleChangeWrapper": [Function],
+        "isSubscribed": [Function],
+        "notifyNestedSubs": [Function],
+        "trySubscribe": [Function],
+        "tryUnsubscribe": [Function],
+      },
+    }
+  }
+>
+  <FeatureList
+    subscriptionPlan="cloud-enterprise"
+  />
+</ContextProvider>
+`;
+
+exports[`components/admin_console/billing/plan_details/feature_list should match snapshot when running paid tier and free 1`] = `
+<ContextProvider
+  value={
+    Object {
+      "getServerState": undefined,
+      "identityFunctionCheck": "once",
+      "stabilityCheck": "once",
+      "store": Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      },
+      "subscription": Object {
+        "addNestedSub": [Function],
+        "getListeners": [Function],
+        "handleChangeWrapper": [Function],
+        "isSubscribed": [Function],
+        "notifyNestedSubs": [Function],
+        "trySubscribe": [Function],
+        "tryUnsubscribe": [Function],
+      },
+    }
+  }
+>
+  <FeatureList
+    subscriptionPlan="cloud-starter"
+  />
+</ContextProvider>
+`;
+
+exports[`components/admin_console/billing/plan_details/feature_list should match snapshot when running paid tier and professional 1`] = `
+<ContextProvider
+  value={
+    Object {
+      "getServerState": undefined,
+      "identityFunctionCheck": "once",
+      "stabilityCheck": "once",
+      "store": Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      },
+      "subscription": Object {
+        "addNestedSub": [Function],
+        "getListeners": [Function],
+        "handleChangeWrapper": [Function],
+        "isSubscribed": [Function],
+        "notifyNestedSubs": [Function],
+        "trySubscribe": [Function],
+        "tryUnsubscribe": [Function],
+      },
+    }
+  }
+>
+  <FeatureList
+    subscriptionPlan="cloud-professional"
+  />
+</ContextProvider>
+`;

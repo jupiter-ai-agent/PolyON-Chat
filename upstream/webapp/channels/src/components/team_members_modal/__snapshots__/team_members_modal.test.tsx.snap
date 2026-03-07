@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`components/TeamMembersModal should match snapshot 1`] = `
+<GenericModal
+  ariaLabelledby="teamMemberModalLabel"
+  bodyPadding={false}
+  className="more-modal"
+  compassDesign={true}
+  enforceFocus={false}
+  headerButton={
+    <Memo(TeamPermissionGate)
+      permissions={
+        Array [
+          "add_user_to_team",
+          "invite_guest",
+        ]
+      }
+      teamId="id"
+    >
+      <button
+        className="btn btn-primary btn-sm invite-people-btn"
+        id="invitePeople"
+        onClick={[Function]}
+        type="button"
+      >
+        <Memo(MemoizedFormattedMessage)
+          defaultMessage="Invite People"
+          id="team_member_modal.invitePeople"
+        />
+      </button>
+    </Memo(TeamPermissionGate)>
+  }
+  id="teamMembersModal"
+  modalHeaderText={
+    <Memo(MemoizedFormattedMessage)
+      defaultMessage="{team} Members"
+      id="team_member_modal.members"
+      values={
+        Object {
+          "team": "display name",
+        }
+      }
+    />
+  }
+  modalHeaderTextId="teamMemberModalLabel"
+  modalLocation="top"
+  onExited={[Function]}
+  onHide={[Function]}
+  show={true}
+>
+  <Connect(MemberListTeam)
+    teamId="id"
+  />
+</GenericModal>
+`;

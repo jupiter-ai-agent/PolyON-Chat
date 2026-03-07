@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`admin_console/team_channel_settings/channel/ChannelModes should match snapshot - not licensed for Group 1`] = `
+<AdminPanel
+  id="channel_manage"
+  subtitle={
+    Object {
+      "defaultMessage": "Choose between inviting members manually or syncing members automatically from groups.",
+      "id": "admin.channel_settings.channel_detail.manageDescription",
+    }
+  }
+  title={
+    Object {
+      "defaultMessage": "Channel Management",
+      "id": "admin.channel_settings.channel_detail.manageTitle",
+    }
+  }
+>
+  <div
+    className="group-teams-and-channels"
+  >
+    <div
+      className="group-teams-and-channels--body"
+    >
+      <AllowAllToggle
+        isDefault={false}
+        isDisabled={false}
+        isPublic={true}
+        isSynced={false}
+        onToggle={[MockFunction]}
+        policyEnforced={false}
+        policyEnforcedToggleAvailable={false}
+      />
+    </div>
+  </div>
+</AdminPanel>
+`;
+
+exports[`admin_console/team_channel_settings/channel/ChannelModes should match snapshot 1`] = `
+<AdminPanel
+  id="channel_manage"
+  subtitle={
+    Object {
+      "defaultMessage": "Choose between inviting members manually or syncing members automatically from groups.",
+      "id": "admin.channel_settings.channel_detail.manageDescription",
+    }
+  }
+  title={
+    Object {
+      "defaultMessage": "Channel Management",
+      "id": "admin.channel_settings.channel_detail.manageTitle",
+    }
+  }
+>
+  <div
+    className="group-teams-and-channels"
+  >
+    <div
+      className="group-teams-and-channels--body"
+    >
+      <SyncGroupsToggle
+        isDefault={false}
+        isDisabled={false}
+        isPublic={true}
+        isSynced={false}
+        onToggle={[MockFunction]}
+        policyEnforced={false}
+        policyEnforcedToggleAvailable={false}
+      />
+      <AllowAllToggle
+        isDefault={false}
+        isDisabled={false}
+        isPublic={true}
+        isSynced={false}
+        onToggle={[MockFunction]}
+        policyEnforced={false}
+        policyEnforcedToggleAvailable={false}
+      />
+    </div>
+  </div>
+</AdminPanel>
+`;

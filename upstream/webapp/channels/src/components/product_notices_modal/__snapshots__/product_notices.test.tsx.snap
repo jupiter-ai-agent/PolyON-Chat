@@ -1,0 +1,188 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`ProductNoticesModal Match snapshot for single notice 1`] = `
+<GenericModal
+  autoCloseOnCancelButton={false}
+  autoCloseOnConfirmButton={true}
+  cancelButtonText={null}
+  className="productNotices"
+  compassDesign={true}
+  confirmButtonText={
+    <span>
+      Download
+    </span>
+  }
+  handleConfirm={[Function]}
+  handleEnterKeyPress={[Function]}
+  modalHeaderText={
+    <span>
+      title
+    </span>
+  }
+  onExited={[Function]}
+>
+  <span
+    className="productNotices__helpText"
+  >
+    <Connect(Markdown)
+      message="descr"
+    />
+  </span>
+  <div
+    className="productNotices__imageDiv"
+  />
+  <div
+    className="productNotices__info"
+  />
+</GenericModal>
+`;
+
+exports[`ProductNoticesModal Match snapshot for user notice 1`] = `
+<GenericModal
+  autoCloseOnCancelButton={false}
+  autoCloseOnConfirmButton={true}
+  cancelButtonText={
+    <React.Fragment>
+      <Memo(PreviousIcon) />
+      <Memo(MemoizedFormattedMessage)
+        defaultMessage="Previous"
+        id="generic.previous"
+      />
+    </React.Fragment>
+  }
+  className="productNotices"
+  compassDesign={true}
+  confirmButtonText={
+    <Memo(MemoizedFormattedMessage)
+      defaultMessage="Done"
+      id="generic.done"
+    />
+  }
+  handleCancel={[Function]}
+  handleConfirm={[Function]}
+  handleEnterKeyPress={[Function]}
+  modalHeaderText={
+    <span>
+      title
+    </span>
+  }
+  onExited={[Function]}
+>
+  <span
+    className="productNotices__helpText"
+  >
+    <Connect(Markdown)
+      message="descr"
+    />
+  </span>
+  <ForwardRef
+    className="GenericModal__button actionButton"
+    href="http://download.com/path"
+    id="actionButton"
+    location="product_notices_modal"
+  >
+    Download
+  </ForwardRef>
+  <div
+    className="productNotices__imageDiv"
+  />
+  <div
+    className="productNotices__info"
+  >
+    <span
+      className="tutorial__circles"
+    >
+      <span
+        className="circle"
+        data-screen={0}
+        id="tutorialIntroCircle0"
+        key="circle0"
+      />
+      <span
+        className="circle active"
+        data-screen={1}
+        id="tutorialIntroCircle1"
+        key="circle1"
+      />
+    </span>
+  </div>
+</GenericModal>
+`;
+
+exports[`ProductNoticesModal Should match snapshot for system admin notice 1`] = `
+<GenericModal
+  autoCloseOnCancelButton={false}
+  autoCloseOnConfirmButton={false}
+  cancelButtonText={null}
+  className="productNotices"
+  compassDesign={true}
+  confirmButtonText={
+    <React.Fragment>
+      <Memo(MemoizedFormattedMessage)
+        defaultMessage="Next"
+        id="generic.next"
+      />
+      <Memo(NextIcon) />
+    </React.Fragment>
+  }
+  handleConfirm={[Function]}
+  handleEnterKeyPress={[Function]}
+  modalHeaderText={
+    <span>
+      for sysadmin
+    </span>
+  }
+  onExited={[Function]}
+>
+  <span
+    className="productNotices__helpText"
+  >
+    <Connect(Markdown)
+      message="your eyes only! [test](https://test.com)"
+    />
+  </span>
+  <ForwardRef
+    className="GenericModal__button actionButton"
+    href="http://download.com/path"
+    id="actionButton"
+    location="product_notices_modal"
+  >
+    Download
+  </ForwardRef>
+  <div
+    className="productNotices__imageDiv"
+  >
+    <img
+      className="productNotices__img"
+      src="https://raw.githubusercontent.com/reflog/notices-experiment/master/images/2020-08-11_11-42.png"
+    />
+  </div>
+  <div
+    className="productNotices__info"
+  >
+    <span
+      className="tutorial__circles"
+    >
+      <span
+        className="circle active"
+        data-screen={0}
+        id="tutorialIntroCircle0"
+        key="circle0"
+      />
+      <span
+        className="circle"
+        data-screen={1}
+        id="tutorialIntroCircle1"
+        key="circle1"
+      />
+    </span>
+    <AdminEyeIcon />
+    <MemoizedFormattedMessage
+      defaultMessage="Visible to Admins only"
+      id="inProduct_notices.adminOnlyMessage"
+    />
+  </div>
+</GenericModal>
+`;
+
+exports[`ProductNoticesModal Should match snapshot when there are no notices 1`] = `""`;

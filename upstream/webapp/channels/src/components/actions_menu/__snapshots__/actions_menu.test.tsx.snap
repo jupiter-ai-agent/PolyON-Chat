@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`components/actions_menu/ActionsMenu has actions - marketplace disabled or user not having SYSCONSOLE_WRITE_PLUGINS - should not show actions and app marketplace 1`] = `
+<MenuWrapper
+  animationComponent={[Function]}
+  className=""
+  onToggle={[Function]}
+  open={true}
+>
+  <ActionsMenuButton
+    buttonId="center_actions_button_post_id_1"
+    isMenuOpen={true}
+    popupId="center_actions_dropdown_post_id_1"
+  />
+  <Menu
+    ariaLabel="Post extra options"
+    listId="center_actions_dropdown_post_id_1"
+    openLeft={true}
+    openUp={false}
+  >
+    <MenuItemAction
+      key="the_component_id_pluginmenuitem"
+      onClick={[Function]}
+      show={true}
+      text="Some text"
+    />
+    <Pluggable
+      key="post_id_1pluggable"
+      pluggableName="PostDropdownMenuItem"
+      postId="post_id_1"
+    />
+  </Menu>
+</MenuWrapper>
+`;
+
+exports[`components/actions_menu/ActionsMenu has actions - marketplace enabled and user has SYSCONSOLE_WRITE_PLUGINS - should show actions and app marketplace 1`] = `
+<MenuWrapper
+  animationComponent={[Function]}
+  className=""
+  onToggle={[Function]}
+  open={true}
+>
+  <ActionsMenuButton
+    buttonId="center_actions_button_post_id_1"
+    isMenuOpen={true}
+    popupId="center_actions_dropdown_post_id_1"
+  />
+  <Menu
+    ariaLabel="Post extra options"
+    listId="center_actions_dropdown_post_id_1"
+    openLeft={true}
+    openUp={false}
+  >
+    <MenuItemAction
+      key="the_component_id_pluginmenuitem"
+      onClick={[Function]}
+      show={true}
+      text="Some text"
+    />
+    <Pluggable
+      key="post_id_1pluggable"
+      pluggableName="PostDropdownMenuItem"
+      postId="post_id_1"
+    />
+    <li
+      className="MenuItem__divider"
+      id="divider_post_post_id_1_marketplace"
+      role="menuitem"
+    />
+    <MenuItemAction
+      icon={
+        <ActionsMenuIcon
+          name="icon-view-grid-plus-outline"
+        />
+      }
+      id="marketplace_icon_post_id_1"
+      key="marketplace_post_id_1"
+      onClick={[Function]}
+      show={true}
+      text="App Marketplace"
+    />
+  </Menu>
+</MenuWrapper>
+`;
+
+exports[`components/actions_menu/ActionsMenu no actions - end user - menu should not be visible to end user 1`] = `""`;
+
+exports[`components/actions_menu/ActionsMenu no actions - sysadmin - menu should show visit marketplace 1`] = `
+<Fragment>
+  <ActionsMenuButton
+    buttonId="center_actions_button_post_id_1"
+    isMenuOpen={true}
+    onClick={[Function]}
+    popupId="center_actions_dropdown_post_id_1"
+  />
+  <ActionsMenuEmptyPopover
+    anchorElement={null}
+    isOpen={true}
+    onOpenMarketplace={[Function]}
+    onToggle={[MockFunction]}
+  />
+</Fragment>
+`;

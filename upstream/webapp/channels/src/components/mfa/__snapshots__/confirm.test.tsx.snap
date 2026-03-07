@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`components/mfa/components/Confirm should match snapshot 1`] = `
+<div>
+  <form
+    className="form-group"
+    onKeyPress={[Function]}
+    onSubmit={[Function]}
+  >
+    <strong>
+      <MemoizedFormattedMessage
+        defaultMessage="Set up complete!"
+        id="mfa.confirm.complete"
+      />
+    </strong>
+    <p>
+      <MemoizedFormattedMessage
+        defaultMessage="Your account is now secure. Next time you sign in, you will be asked to enter a code from your authenticator app on your phone."
+        id="mfa.confirm.secure"
+      />
+    </p>
+    <button
+      className="btn btn-primary"
+      type="submit"
+    >
+      <MemoizedFormattedMessage
+        defaultMessage="Okay"
+        id="mfa.confirm.okay"
+      />
+    </button>
+  </form>
+</div>
+`;

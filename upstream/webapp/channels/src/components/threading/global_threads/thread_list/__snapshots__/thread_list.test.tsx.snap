@@ -1,0 +1,110 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`components/threading/global_threads/thread_list should match snapshot 1`] = `
+<div
+  className="ThreadList"
+  id="threads-list-container"
+  tabIndex={0}
+>
+  <Header
+    heading={
+      <div
+        aria-label="Filter visible threads"
+        aria-orientation="horizontal"
+        className="tab-buttons-list"
+        role="tablist"
+      >
+        <div
+          className="tab-button-wrapper"
+        >
+          <Memo(Button)
+            aria-controls="threads-list"
+            aria-selected={true}
+            className="Button___large Margined"
+            id="threads-list-filter-none"
+            isActive={true}
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            role="tab"
+            tabIndex={0}
+          >
+            <Memo(MemoizedFormattedMessage)
+              defaultMessage="Followed threads"
+              id="globalThreads.heading"
+            />
+          </Memo(Button)>
+        </div>
+        <div
+          className="tab-button-wrapper"
+          id="threads-list-unread-button"
+        >
+          <Memo(Button)
+            aria-controls="threads-list"
+            aria-selected={false}
+            className="Button___large Margined"
+            hasDot={true}
+            id="threads-list-filter-unread"
+            isActive={false}
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            role="tab"
+            tabIndex={-1}
+          >
+            <Memo(MemoizedFormattedMessage)
+              defaultMessage="Unreads"
+              id="threading.filters.unreads"
+            />
+          </Memo(Button)>
+        </div>
+      </div>
+    }
+    id="tutorial-threads-mobile-header"
+    right={
+      <div
+        className="right-anchor"
+      >
+        <WithTooltip
+          title="Mark all threads as read"
+        >
+          <Memo(Button)
+            aria-label="Mark all threads as read"
+            className="Button___large Button___icon"
+            id="threads-list__mark-all-as-read"
+            marginTop={true}
+            onClick={[Function]}
+          >
+            <span
+              className="icon"
+            >
+              <PlaylistCheckIcon
+                size={18}
+              />
+            </span>
+          </Memo(Button)>
+        </WithTooltip>
+      </div>
+    }
+  />
+  <div
+    className="threads"
+    data-testid="threads_list"
+    id="threads-list"
+    role="tabpanel"
+  >
+    <Memo(VirtualizedThreadList)
+      addNoMoreResultsItem={false}
+      ids={
+        Array [
+          "1",
+          "2",
+          "3",
+        ]
+      }
+      isLoading={false}
+      key="threads_list_"
+      loadMoreItems={[Function]}
+      total={0}
+    />
+  </div>
+</div>
+`;

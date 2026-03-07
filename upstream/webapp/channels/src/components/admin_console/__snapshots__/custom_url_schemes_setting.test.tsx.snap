@@ -1,0 +1,470 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`components/AdminConsole/CustomUrlSchemeSetting initial state with multiple items 1`] = `
+<CustomURLSchemesSetting
+  disabled={false}
+  id="MySetting"
+  onChange={[MockFunction]}
+  setByEnv={false}
+  value={
+    Array [
+      "git",
+      "smtp",
+      "steam",
+    ]
+  }
+>
+  <Memo(Settings)
+    helpText={
+      <Memo(MemoizedFormattedMessage)
+        defaultMessage="Allows message text to link if it begins with any of the comma-separated URL schemes listed. By default, the following schemes will create links: \\"http\\", \\"https\\", \\"ftp\\", \\"tel\\", and \\"mailto\\"."
+        id="admin.customization.customUrlSchemesDesc"
+      />
+    }
+    inputId="MySetting"
+    label={
+      <Memo(MemoizedFormattedMessage)
+        defaultMessage="Custom URL Schemes:"
+        id="admin.customization.customUrlSchemes"
+      />
+    }
+    setByEnv={false}
+  >
+    <div
+      className="form-group"
+      data-testid="MySetting"
+    >
+      <label
+        className="control-label col-sm-4"
+        htmlFor="MySetting"
+      >
+        <FormattedMessage
+          defaultMessage="Custom URL Schemes:"
+          id="admin.customization.customUrlSchemes"
+        >
+          <span>
+            Custom URL Schemes:
+          </span>
+        </FormattedMessage>
+      </label>
+      <div
+        className="col-sm-8"
+      >
+        <LocalizedPlaceholderInput
+          className="form-control"
+          disabled={false}
+          id="MySetting"
+          onChange={[Function]}
+          placeholder={
+            Object {
+              "defaultMessage": "E.g.: \\"git,smtp\\"",
+              "id": "admin.customization.customUrlSchemesPlaceholder",
+            }
+          }
+          type="text"
+          value="git,smtp,steam"
+        >
+          <input
+            className="form-control"
+            disabled={false}
+            id="MySetting"
+            onChange={[Function]}
+            placeholder="E.g.: \\"git,smtp\\""
+            type="text"
+            value="git,smtp,steam"
+          />
+        </LocalizedPlaceholderInput>
+        <div
+          className="help-text"
+          data-testid="MySettinghelp-text"
+        >
+          <FormattedMessage
+            defaultMessage="Allows message text to link if it begins with any of the comma-separated URL schemes listed. By default, the following schemes will create links: \\"http\\", \\"https\\", \\"ftp\\", \\"tel\\", and \\"mailto\\"."
+            id="admin.customization.customUrlSchemesDesc"
+          >
+            <span>
+              Allows message text to link if it begins with any of the comma-separated URL schemes listed. By default, the following schemes will create links: "http", "https", "ftp", "tel", and "mailto".
+            </span>
+          </FormattedMessage>
+        </div>
+      </div>
+    </div>
+  </Memo(Settings)>
+</CustomURLSchemesSetting>
+`;
+
+exports[`components/AdminConsole/CustomUrlSchemeSetting initial state with no items 1`] = `
+<CustomURLSchemesSetting
+  disabled={false}
+  id="MySetting"
+  onChange={[MockFunction]}
+  setByEnv={false}
+  value={Array []}
+>
+  <Memo(Settings)
+    helpText={
+      <Memo(MemoizedFormattedMessage)
+        defaultMessage="Allows message text to link if it begins with any of the comma-separated URL schemes listed. By default, the following schemes will create links: \\"http\\", \\"https\\", \\"ftp\\", \\"tel\\", and \\"mailto\\"."
+        id="admin.customization.customUrlSchemesDesc"
+      />
+    }
+    inputId="MySetting"
+    label={
+      <Memo(MemoizedFormattedMessage)
+        defaultMessage="Custom URL Schemes:"
+        id="admin.customization.customUrlSchemes"
+      />
+    }
+    setByEnv={false}
+  >
+    <div
+      className="form-group"
+      data-testid="MySetting"
+    >
+      <label
+        className="control-label col-sm-4"
+        htmlFor="MySetting"
+      >
+        <FormattedMessage
+          defaultMessage="Custom URL Schemes:"
+          id="admin.customization.customUrlSchemes"
+        >
+          <span>
+            Custom URL Schemes:
+          </span>
+        </FormattedMessage>
+      </label>
+      <div
+        className="col-sm-8"
+      >
+        <LocalizedPlaceholderInput
+          className="form-control"
+          disabled={false}
+          id="MySetting"
+          onChange={[Function]}
+          placeholder={
+            Object {
+              "defaultMessage": "E.g.: \\"git,smtp\\"",
+              "id": "admin.customization.customUrlSchemesPlaceholder",
+            }
+          }
+          type="text"
+          value=""
+        >
+          <input
+            className="form-control"
+            disabled={false}
+            id="MySetting"
+            onChange={[Function]}
+            placeholder="E.g.: \\"git,smtp\\""
+            type="text"
+            value=""
+          />
+        </LocalizedPlaceholderInput>
+        <div
+          className="help-text"
+          data-testid="MySettinghelp-text"
+        >
+          <FormattedMessage
+            defaultMessage="Allows message text to link if it begins with any of the comma-separated URL schemes listed. By default, the following schemes will create links: \\"http\\", \\"https\\", \\"ftp\\", \\"tel\\", and \\"mailto\\"."
+            id="admin.customization.customUrlSchemesDesc"
+          >
+            <span>
+              Allows message text to link if it begins with any of the comma-separated URL schemes listed. By default, the following schemes will create links: "http", "https", "ftp", "tel", and "mailto".
+            </span>
+          </FormattedMessage>
+        </div>
+      </div>
+    </div>
+  </Memo(Settings)>
+</CustomURLSchemesSetting>
+`;
+
+exports[`components/AdminConsole/CustomUrlSchemeSetting initial state with one item 1`] = `
+<CustomURLSchemesSetting
+  disabled={false}
+  id="MySetting"
+  onChange={[MockFunction]}
+  setByEnv={false}
+  value={
+    Array [
+      "git",
+    ]
+  }
+>
+  <Memo(Settings)
+    helpText={
+      <Memo(MemoizedFormattedMessage)
+        defaultMessage="Allows message text to link if it begins with any of the comma-separated URL schemes listed. By default, the following schemes will create links: \\"http\\", \\"https\\", \\"ftp\\", \\"tel\\", and \\"mailto\\"."
+        id="admin.customization.customUrlSchemesDesc"
+      />
+    }
+    inputId="MySetting"
+    label={
+      <Memo(MemoizedFormattedMessage)
+        defaultMessage="Custom URL Schemes:"
+        id="admin.customization.customUrlSchemes"
+      />
+    }
+    setByEnv={false}
+  >
+    <div
+      className="form-group"
+      data-testid="MySetting"
+    >
+      <label
+        className="control-label col-sm-4"
+        htmlFor="MySetting"
+      >
+        <FormattedMessage
+          defaultMessage="Custom URL Schemes:"
+          id="admin.customization.customUrlSchemes"
+        >
+          <span>
+            Custom URL Schemes:
+          </span>
+        </FormattedMessage>
+      </label>
+      <div
+        className="col-sm-8"
+      >
+        <LocalizedPlaceholderInput
+          className="form-control"
+          disabled={false}
+          id="MySetting"
+          onChange={[Function]}
+          placeholder={
+            Object {
+              "defaultMessage": "E.g.: \\"git,smtp\\"",
+              "id": "admin.customization.customUrlSchemesPlaceholder",
+            }
+          }
+          type="text"
+          value="git"
+        >
+          <input
+            className="form-control"
+            disabled={false}
+            id="MySetting"
+            onChange={[Function]}
+            placeholder="E.g.: \\"git,smtp\\""
+            type="text"
+            value="git"
+          />
+        </LocalizedPlaceholderInput>
+        <div
+          className="help-text"
+          data-testid="MySettinghelp-text"
+        >
+          <FormattedMessage
+            defaultMessage="Allows message text to link if it begins with any of the comma-separated URL schemes listed. By default, the following schemes will create links: \\"http\\", \\"https\\", \\"ftp\\", \\"tel\\", and \\"mailto\\"."
+            id="admin.customization.customUrlSchemesDesc"
+          >
+            <span>
+              Allows message text to link if it begins with any of the comma-separated URL schemes listed. By default, the following schemes will create links: "http", "https", "ftp", "tel", and "mailto".
+            </span>
+          </FormattedMessage>
+        </div>
+      </div>
+    </div>
+  </Memo(Settings)>
+</CustomURLSchemesSetting>
+`;
+
+exports[`components/AdminConsole/CustomUrlSchemeSetting renders properly when disabled 1`] = `
+<CustomURLSchemesSetting
+  disabled={true}
+  id="MySetting"
+  onChange={[MockFunction]}
+  setByEnv={false}
+  value={
+    Array [
+      "git",
+      "smtp",
+    ]
+  }
+>
+  <Memo(Settings)
+    helpText={
+      <Memo(MemoizedFormattedMessage)
+        defaultMessage="Allows message text to link if it begins with any of the comma-separated URL schemes listed. By default, the following schemes will create links: \\"http\\", \\"https\\", \\"ftp\\", \\"tel\\", and \\"mailto\\"."
+        id="admin.customization.customUrlSchemesDesc"
+      />
+    }
+    inputId="MySetting"
+    label={
+      <Memo(MemoizedFormattedMessage)
+        defaultMessage="Custom URL Schemes:"
+        id="admin.customization.customUrlSchemes"
+      />
+    }
+    setByEnv={false}
+  >
+    <div
+      className="form-group"
+      data-testid="MySetting"
+    >
+      <label
+        className="control-label col-sm-4"
+        htmlFor="MySetting"
+      >
+        <FormattedMessage
+          defaultMessage="Custom URL Schemes:"
+          id="admin.customization.customUrlSchemes"
+        >
+          <span>
+            Custom URL Schemes:
+          </span>
+        </FormattedMessage>
+      </label>
+      <div
+        className="col-sm-8"
+      >
+        <LocalizedPlaceholderInput
+          className="form-control"
+          disabled={true}
+          id="MySetting"
+          onChange={[Function]}
+          placeholder={
+            Object {
+              "defaultMessage": "E.g.: \\"git,smtp\\"",
+              "id": "admin.customization.customUrlSchemesPlaceholder",
+            }
+          }
+          type="text"
+          value="git,smtp"
+        >
+          <input
+            className="form-control"
+            disabled={true}
+            id="MySetting"
+            onChange={[Function]}
+            placeholder="E.g.: \\"git,smtp\\""
+            type="text"
+            value="git,smtp"
+          />
+        </LocalizedPlaceholderInput>
+        <div
+          className="help-text"
+          data-testid="MySettinghelp-text"
+        >
+          <FormattedMessage
+            defaultMessage="Allows message text to link if it begins with any of the comma-separated URL schemes listed. By default, the following schemes will create links: \\"http\\", \\"https\\", \\"ftp\\", \\"tel\\", and \\"mailto\\"."
+            id="admin.customization.customUrlSchemesDesc"
+          >
+            <span>
+              Allows message text to link if it begins with any of the comma-separated URL schemes listed. By default, the following schemes will create links: "http", "https", "ftp", "tel", and "mailto".
+            </span>
+          </FormattedMessage>
+        </div>
+      </div>
+    </div>
+  </Memo(Settings)>
+</CustomURLSchemesSetting>
+`;
+
+exports[`components/AdminConsole/CustomUrlSchemeSetting renders properly when set by environment variable 1`] = `
+<CustomURLSchemesSetting
+  disabled={false}
+  id="MySetting"
+  onChange={[MockFunction]}
+  setByEnv={true}
+  value={
+    Array [
+      "git",
+      "smtp",
+    ]
+  }
+>
+  <Memo(Settings)
+    helpText={
+      <Memo(MemoizedFormattedMessage)
+        defaultMessage="Allows message text to link if it begins with any of the comma-separated URL schemes listed. By default, the following schemes will create links: \\"http\\", \\"https\\", \\"ftp\\", \\"tel\\", and \\"mailto\\"."
+        id="admin.customization.customUrlSchemesDesc"
+      />
+    }
+    inputId="MySetting"
+    label={
+      <Memo(MemoizedFormattedMessage)
+        defaultMessage="Custom URL Schemes:"
+        id="admin.customization.customUrlSchemes"
+      />
+    }
+    setByEnv={true}
+  >
+    <div
+      className="form-group"
+      data-testid="MySetting"
+    >
+      <label
+        className="control-label col-sm-4"
+        htmlFor="MySetting"
+      >
+        <FormattedMessage
+          defaultMessage="Custom URL Schemes:"
+          id="admin.customization.customUrlSchemes"
+        >
+          <span>
+            Custom URL Schemes:
+          </span>
+        </FormattedMessage>
+      </label>
+      <div
+        className="col-sm-8"
+      >
+        <LocalizedPlaceholderInput
+          className="form-control"
+          disabled={true}
+          id="MySetting"
+          onChange={[Function]}
+          placeholder={
+            Object {
+              "defaultMessage": "E.g.: \\"git,smtp\\"",
+              "id": "admin.customization.customUrlSchemesPlaceholder",
+            }
+          }
+          type="text"
+          value="git,smtp"
+        >
+          <input
+            className="form-control"
+            disabled={true}
+            id="MySetting"
+            onChange={[Function]}
+            placeholder="E.g.: \\"git,smtp\\""
+            type="text"
+            value="git,smtp"
+          />
+        </LocalizedPlaceholderInput>
+        <div
+          className="help-text"
+          data-testid="MySettinghelp-text"
+        >
+          <FormattedMessage
+            defaultMessage="Allows message text to link if it begins with any of the comma-separated URL schemes listed. By default, the following schemes will create links: \\"http\\", \\"https\\", \\"ftp\\", \\"tel\\", and \\"mailto\\"."
+            id="admin.customization.customUrlSchemesDesc"
+          >
+            <span>
+              Allows message text to link if it begins with any of the comma-separated URL schemes listed. By default, the following schemes will create links: "http", "https", "ftp", "tel", and "mailto".
+            </span>
+          </FormattedMessage>
+        </div>
+        <SetByEnv>
+          <div
+            className="alert alert-warning"
+          >
+            <FormattedMessage
+              defaultMessage="This setting has been set through an environment variable. It cannot be changed through the System Console."
+              id="admin.set_by_env"
+            >
+              <span>
+                This setting has been set through an environment variable. It cannot be changed through the System Console.
+              </span>
+            </FormattedMessage>
+          </div>
+        </SetByEnv>
+      </div>
+    </div>
+  </Memo(Settings)>
+</CustomURLSchemesSetting>
+`;

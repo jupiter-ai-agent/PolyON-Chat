@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`components/user_settings/display/ColorChooser should match, init 1`] = `
+<Fragment>
+  <label
+    className="custom-label"
+    htmlFor="choose-color-inputColorValue"
+  >
+    Choose color
+  </label>
+  <ColorInput
+    id="choose-color"
+    onChange={[Function]}
+    value="#ffeec0"
+  />
+</Fragment>
+`;
