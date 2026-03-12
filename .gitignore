@@ -1,4 +1,10 @@
+# Build artifacts - binaries
+upstream/server/mattermost
 upstream/server/polyon-chat
 upstream/server/bin/
-*.exe
-.DS_Store
+upstream/server/*.exe
+upstream/server/cmd/*/
+# Node modules
+node_modules/
+# Large test fixtures
+upstream/e2e-tests/
