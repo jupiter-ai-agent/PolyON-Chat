@@ -493,6 +493,14 @@ const Login = ({onCustomizeHeader}: LoginProps) => {
             return;
         }
 
+        // PolyON: SSO 전용 — 이메일 로그인 비활성화 시 Keycloak으로 즉시 리다이렉트
+        // enableBaseLogin=false이고 GitLab SSO만 활성화된 경우 버튼 없이 바로 이동
+        if (!enableBaseLogin && enableSignUpWithGitLab && !searchParam.get('extra')) {
+            const ssoUrl = `${Client4.getOAuthRoute()}/gitlab/login${search}`;
+            window.location.href = ssoUrl;
+            return;
+        }
+
         onWindowResize();
         onWindowFocus();
 

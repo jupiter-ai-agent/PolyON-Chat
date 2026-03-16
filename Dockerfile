@@ -9,16 +9,11 @@ RUN go build -o /polyon-chat ./cmd/mattermost/
 # ── Stage 2: Official image — config/i18n/templates/fonts 추출용 ──
 FROM --platform=linux/amd64 mattermost/mattermost-team-edition:11.5.1 AS official-source
 
-# ── Stage 3: Build webapp from source ──
-# login.tsx (auto-redirect to Keycloak), login_gitlab_icon.tsx (PolyON icon) 반영
-FROM node:20-alpine AS webapp-builder
-RUN apk add --no-cache git python3 make g++
-WORKDIR /webapp
-COPY upstream/webapp/ .
-# npm ci: postinstall이 patch-package + platform subpackages 자동 빌드
-RUN npm ci
-# channels webapp 빌드 (output: channels/dist/)
-RUN npm run build --workspace=channels
+# ── Stage 3: webapp (Mac에서 pre-built) ──
+# login.tsx auto-redirect, login_gitlab_icon.tsx PolyON 아이콘 반영
+# Mac에서 npm run build 완료 후 dist/ 결과물 직접 복사
+FROM alpine:3.21 AS webapp-builder
+COPY upstream/webapp/channels/dist/ /webapp/channels/dist/
 
 # ── Stage 4: Runtime ──
 FROM alpine:3.21

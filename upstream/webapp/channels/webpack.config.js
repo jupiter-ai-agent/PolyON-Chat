@@ -108,11 +108,11 @@ var config = {
                 type: 'asset/resource',
                 use: [
 
-                    // Skip image optimizations during development to speed up build time
-                    !DEV && {
-                        loader: 'image-webpack-loader',
-                        options: {},
-                    },
+                    // PolyON: image-webpack-loader disabled (binary not available on arm64)
+                    // !DEV && {
+                    //     loader: 'image-webpack-loader',
+                    //     options: {},
+                    // },
                 ],
             },
             {
