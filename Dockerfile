@@ -7,6 +7,8 @@ WORKDIR /src/server
 RUN go build -o /polyon-chat ./cmd/mattermost/
 
 # ── Stage 2: Extract webapp from official amd64 image ──
+# TODO: webapp 빌드 포함 시 node:20-alpine 스테이지 추가 필요
+# (login_gitlab_icon.tsx → PolyON SSO 아이콘, login.tsx → 제목 단순화)
 FROM --platform=linux/amd64 mattermost/mattermost-team-edition:11.5.1 AS webapp-source
 
 # ── Stage 3: Runtime ──

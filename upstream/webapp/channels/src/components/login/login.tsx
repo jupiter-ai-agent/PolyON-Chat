@@ -852,7 +852,8 @@ const Login = ({onCustomizeHeader}: LoginProps) => {
         }
 
         if (!enableBaseLogin && enableExternalSignup) {
-            return formatMessage({id: 'login.cardtitle.external', defaultMessage: 'Log in with one of the following:'});
+            // PolyON: SSO 전용 — 제목 단순화
+            return formatMessage({id: 'login.cardtitle', defaultMessage: 'Log in'});
         }
 
         return formatMessage({id: 'login.cardtitle', defaultMessage: 'Log in'});
