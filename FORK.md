@@ -29,7 +29,20 @@ server/channels/app/ldap.go            # LDAP sync/test 라이선스 체크 제�
 server/channels/app/authentication.go  # LDAP 인증 라이선스 체크 제거
 server/channels/app/login.go           # LDAP 로그인 라이선스 체크 제거
 server/config/client.go                # LDAP/OIDC 설정 노출 라이선스 체크 제거
+                                       # + GitLab OIDC / OpenID 설정을 license 블록 밖으로 이동
+                                       #   (PP 제1원칙: AD→Keycloak SSO 무조건 활성화)
 ```
+
+## 패치 이력
+
+### v1.0.0 (2026-03-07)
+- 최초 fork — LDAP 라이선스 체크 전면 제거
+- `server/polyon/` LDAP 직접 바인딩 구현
+
+### v1.0.1 (2026-03-16)
+- `config/client.go`: GitLab OIDC + OpenID 설정을 `license != nil` 블록 밖으로 이동
+- 원인: license=nil 환경에서 `EnableSignUpWithGitLab` 클라이언트 미전달 → SSO 버튼 미표시
+- PP 원칙: AD DC → Keycloak (OIDC) → Mattermost 단일 로그인 완성
 
 ## 라이선스 체크 패턴
 

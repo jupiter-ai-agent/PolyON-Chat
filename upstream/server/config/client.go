@@ -372,6 +372,15 @@ func GenerateLimitedClientConfig(c *model.Config, telemetryID string, license *m
 	props["GuestAccountsEnforceMultifactorAuthentication"] = strconv.FormatBool(*c.GuestAccountsSettings.EnforceMultifactorAuthentication)
 	props["EnableGuestMagicLink"] = strconv.FormatBool(*c.GuestAccountsSettings.EnableGuestMagicLink)
 
+	// PolyON: GitLab OIDC (Keycloak SSO) and OpenID are always available — no license required
+	// AD DC → Keycloak → Mattermost SSO (PP 제1원칙: 계정 통합)
+	props["EnableSignUpWithGitLab"] = strconv.FormatBool(*c.GitLabSettings.Enable)
+	props["GitLabButtonColor"] = *c.GitLabSettings.ButtonColor
+	props["GitLabButtonText"] = *c.GitLabSettings.ButtonText
+	props["EnableSignUpWithOpenId"] = strconv.FormatBool(*c.OpenIdSettings.Enable)
+	props["OpenIdButtonColor"] = *c.OpenIdSettings.ButtonColor
+	props["OpenIdButtonText"] = *c.OpenIdSettings.ButtonText
+
 	if license != nil {
 		// PolyON: LDAP is always available (no license check)
 		props["EnableLdap"] = strconv.FormatBool(*c.LdapSettings.Enable)
@@ -410,14 +419,6 @@ func GenerateLimitedClientConfig(c *model.Config, telemetryID string, license *m
 		if *license.Features.Office365OAuth {
 			props["EnableSignUpWithOffice365"] = strconv.FormatBool(*c.Office365Settings.Enable)
 		}
-
-		// PolyON: OpenId is always available (no license check)
-		props["EnableSignUpWithOpenId"] = strconv.FormatBool(*c.OpenIdSettings.Enable)
-		props["OpenIdButtonColor"] = *c.OpenIdSettings.ButtonColor
-		props["OpenIdButtonText"] = *c.OpenIdSettings.ButtonText
-		props["EnableSignUpWithGitLab"] = strconv.FormatBool(*c.GitLabSettings.Enable)
-		props["GitLabButtonColor"] = *c.GitLabSettings.ButtonColor
-		props["GitLabButtonText"] = *c.GitLabSettings.ButtonText
 
 		if model.MinimumEnterpriseLicense(license) {
 			props["MobileEnableBiometrics"] = strconv.FormatBool(*c.NativeAppSettings.MobileEnableBiometrics)
