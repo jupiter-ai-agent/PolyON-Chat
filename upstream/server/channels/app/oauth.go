@@ -733,6 +733,13 @@ func (a *App) getSSOProvider(service string) (einterfaces.OAuthProvider, *model.
 		providerType = model.ServiceOpenid
 	}
 	provider := einterfaces.GetOAuthProvider(providerType)
+	if provider == nil && providerType == model.ServiceOpenid {
+		// PolyON: fallback to original service provider for Keycloak OIDC
+		// When Scope contains "openid", providerType becomes "openid", but if no
+		// openid provider is registered (e.g. gitlab with Keycloak OIDC), fall back
+		// to the original service (gitlab) provider.
+		provider = einterfaces.GetOAuthProvider(service)
+	}
 	if provider == nil {
 		return nil, model.NewAppError("getSSOProvider", "api.user.login_by_oauth.not_available.app_error",
 			map[string]any{"Service": strings.Title(service)}, "", http.StatusNotImplemented)
