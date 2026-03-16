@@ -22,6 +22,10 @@ COPY --from=webapp-source /mattermost/i18n/ i18n/
 COPY --from=webapp-source /mattermost/templates/ templates/
 COPY --from=webapp-source /mattermost/fonts/ fonts/
 
+# PP 원칙 적용: GitLab OIDC 활성화, 이메일 로그인 비활성화
+COPY patch-config.py /tmp/patch-config.py
+RUN python3 /tmp/patch-config.py config/config.json
+
 # PP module manifest
 COPY module.yaml /polyon-module/module.yaml
 
